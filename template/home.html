@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block head %} <title>Link Converter</title> {% endblock %}
+
+{% block body %}
+<form action="/" method="POST" autocomplete="off">
+    <div id="textarea-group">
+        <textarea class="mobile links" name="mobile" value=""></textarea>
+        <textarea class="desktop links" name="desktop" value="">{{data}}</textarea>
+    </div>
+    <br>
+    <div id="button"><input type="submit" value="convert"></div>
+</form>
+
+
+{% endblock%}
